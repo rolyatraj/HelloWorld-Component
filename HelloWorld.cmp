@@ -4,6 +4,11 @@
         <div class="slds-card__body slds-card__body_inner slds-p-top_medium">
             Hello, {!v.greeting}
             <lightning:input aura:id="myInput" type="text" value="{!v.greeting}"/>
+            <lightning:layout class="slds-hint-parent">
+            <a onclick="{!c.navToRecord}">
+                <h3 class="slds-text-heading_small slds-m-bottom_xx-small">{!v.property.Name}</h3>
+            </a>
+            </lightning:layout>
         </div>
     </div>
 </aura:component>
